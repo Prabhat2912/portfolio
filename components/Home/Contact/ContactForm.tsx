@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import { toast } from "sonner";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -35,11 +35,12 @@ const ContactForm = () => {
 
       const data = await response.json();
       if (data.success) {
-        alert("Message sent successfully!");
+        toast.success("Message sent successfully");
       } else {
-        alert("There was an error sending the message.");
+        toast.error("Failed to send message");
       }
     } catch (error) {
+      toast.error("Failed to send message");
       console.error("Error sending the message: ", error);
     } finally {
       setLoading(false);

@@ -15,7 +15,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
-    "react-parallax-tilt": "^1.7.266"
+    "react-parallax-tilt": "^1.7.266",
+    "sonner": "^1.7.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

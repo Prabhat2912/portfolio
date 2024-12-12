@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "sonner";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
 import ScrollToTop from "@/components/Helper/ScrollToTop";
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="custom-scrollbar">
       <body className={`${sora.className}  antialiased`}>
+        <Toaster richColors position="bottom-right" />
         <ResponsiveNav />
         {children}
         <Footer />
