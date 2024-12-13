@@ -17,6 +17,7 @@ const description = "Portfolio Website by Prabhat Kumar";
 export const metadata: Metadata = {
   title: title,
   description: description,
+  manifest: "/manifest.json",
   metadataBase: new URL(
     "https://portfolio-prabhat-kumars-projects.vercel.app/"
   ),
@@ -34,6 +35,7 @@ export const metadata: Metadata = {
     url: domain,
     type: "website",
     siteName: title,
+
     images: [
       {
         url: domain + "/opengraph-image.png",
