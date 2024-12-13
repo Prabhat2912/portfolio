@@ -11,12 +11,28 @@ const sora = Sora({
   subsets: ["latin"],
 });
 
+const domain = process.env.NEXT_PUBLIC_BASE_URL || "";
+const title = "Portfolio Website";
+const description = "Portfolio Website by Prabhat Kumar";
 export const metadata: Metadata = {
-  title: "Portfolio Website",
-  description: "Portfolio Website by Prabhat Kumar",
-  metadataBase: new URL("https://localhost:3000"),
+  title: title,
+  description: description,
+  metadataBase: new URL(
+    "https://portfolio-prabhat-kumars-projects.vercel.app/"
+  ),
   openGraph: {
-    images: "/opengraph-image.png",
+    title: title,
+    description: description,
+    url: domain,
+    siteName: title,
+    images: [
+      {
+        url: domain + "/opengraph-image.png",
+        width: 800,
+        height: 800,
+        alt: title,
+      },
+    ],
   },
 };
 
