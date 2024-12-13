@@ -15,7 +15,7 @@ const Project = () => {
             key={i}
             data-aos="fade-up"
             data-aos-anchor-palcement="top-center"
-            data-aos-delay={`${i * 150}`}
+            data-aos-delay={`${i * 100}`}
           >
             <ProjectCard key={project.id} projectData={project} />
           </div>

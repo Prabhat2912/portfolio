@@ -20,10 +20,19 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     "https://portfolio-prabhat-kumars-projects.vercel.app/"
   ),
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: title,
+  },
+  formatDetection: {
+    telephone: false,
+  },
   openGraph: {
     title: title,
     description: description,
     url: domain,
+    type: "website",
     siteName: title,
     images: [
       {
@@ -33,6 +42,20 @@ export const metadata: Metadata = {
         alt: title,
       },
     ],
+  },
+  twitter: {
+    card: "summary",
+    title: {
+      default: title,
+      template: title,
+    },
+    images: [
+      {
+        url: domain + "/opengraph-image.png",
+        alt: title,
+      },
+    ],
+    description: description,
   },
 };
 
@@ -44,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="custom-scrollbar">
       <body className={`${sora.className}  antialiased`}>
-        <Toaster richColors position="bottom-right" />
+        <Toaster theme="dark" richColors position="bottom-right" />
         <ResponsiveNav />
         {children}
         <Footer />
