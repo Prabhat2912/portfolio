@@ -31,7 +31,7 @@ const Navbar: React.FC<NavProps> = ({ openNav }) => {
         navBg ? "bg-[#240b39]" : "fixed"
       } `}
     >
-      <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto ">
+      <div className="flex items-center h-full justify-between w-fullsm:w-[90%] xl:w-[80%] mx-auto ">
         <Image src="/images/logo.png" width={170} height={170} alt="logo" />
         <div className="flex items-center space-x-10 ">
           <div className="hidden lg:flex items-center space-x-8 ">
@@ -42,7 +42,7 @@ const Navbar: React.FC<NavProps> = ({ openNav }) => {
             ))}
           </div>
           <Link href={"#contact"} className="flex items-center space-x-4">
-            <button className="md:px-10 text-blue-800 md:py-3 px-8 py-3 font-semibold sm:text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg ">
+            <button className="md:px-10 text-blue-800 md:py-3 px-2 py-1 max-sm:text-[12px] leading-4  font-semibold sm:text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg ">
               Contact Me
             </button>
           </Link>
