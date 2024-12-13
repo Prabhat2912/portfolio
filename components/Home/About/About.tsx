@@ -49,7 +49,7 @@ const About = () => {
         {aboutInfo.skills.map((skill, i) => (
           <div key={i} className="flex items-center   space-x-6 mb-6 ">
             <div
-              className={`w-7 h-7 ${skill.color}  flex flex-col items-center justify-center `}
+              className={`w-7 h-7  flex flex-col items-center justify-center ${skill.color}  `}
             >
               <FaCheck />
             </div>
