@@ -16,7 +16,6 @@ const ProjectCard = ({ projectData }: Props) => {
         <iframe
           src={projectData.url}
           title={projectData.name}
-          scrolling="no"
           className=" w-[1100px] h-[1000px] max-md:w-[700px] max-lg:w-[750px]  max-xl:w-[800px]  rounded-lg shadow-md"
           style={{
             transform: "scale(0.3)",

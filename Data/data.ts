@@ -134,6 +134,11 @@ export const projectData: ProjectData[] = [
     name: "Bubble Game",
     url: "https://bubblegame-prabhat.vercel.app/",
   },
+  {
+    id: 6,
+    name: "AI Mock Interview Platform",
+    url: "https://gemini-ai-mock-interview.vercel.app/",
+  },
 ];
 
 export const skillsData: skills[] = [
