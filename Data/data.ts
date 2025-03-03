@@ -40,13 +40,13 @@ export const aboutInfo: AboutData = {
   stats: [
     {
       name: "Experience",
-      value: "3+",
+      value: "10+",
       description: "Months of Industrial Experience",
       image: "/images/experience.png",
     },
     {
       name: "Projects",
-      value: "10+",
+      value: "50+",
       description: "Projects",
       image: "/images/completed.png",
     },
