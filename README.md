@@ -9,7 +9,7 @@ A modern, responsive portfolio website showcasing full-stack development skills,
 
 ## 🚀 Live Demo
 
-🔗 **[Visit Live Portfolio](https://prabhat-kumar-portfolio.vercel.app)**
+🔗 **[Visit Live Portfolio](https://prabhat29-portfolio.vercel.app)**
 
 ## 📋 Table of Contents
 
@@ -263,7 +263,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - 📧 **Email**: [pk993105@gmail.com](mailto:pk993105@gmail.com)
 - 💼 **LinkedIn**: [linkedin.com/in/real-prabhat](https://www.linkedin.com/in/real-prabhat/)
-- 🔗 **Portfolio**: [prabhat-kumar-portfolio.vercel.app](https://prabhat-kumar-portfolio.vercel.app)
+- 🔗 **Portfolio**: [prabhat29-portfolio.vercel.app](https://prabhat29-portfolio.vercel.app)
 - 🌐 **Links**: [linktr.ee/real_prabhat](https://linktr.ee/real_prabhat)
 
 ---
