@@ -33,6 +33,7 @@ export type ProjectData = {
   id: number;
   name: string;
   url: string;
+  screenShot?: string;
 };
 export type skills = {
   id: number;

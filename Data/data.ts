@@ -138,16 +138,19 @@ export const projectData: ProjectData[] = [
     id: 6,
     name: "AI Mock Interview Platform",
     url: "https://gemini-ai-mock-interview.vercel.app/",
+    screenShot: "/images/projectImages/ai-mock-interview.png",
   },
   {
     id: 7,
     name: "Collabrative Whiteboard",
     url: "https://collabrative-whiteboard.vercel.app/",
+    screenShot: "/images/projectImages/collabrative-whiteboard.png",
   },
   {
     id: 8,
     name: "Mini Database Engine C++",
     url: "https://github.com/Prabhat2912/mini-database-engine",
+    screenShot: "/images/projectImages/database-engine.png",
   },
 ];
 
