@@ -15,7 +15,7 @@
 export const SITE = {
   name: "Prabhat Kumar",
   tagline: "Software Engineer — full-stack, data & AI.",
-  url: process.env.NEXT_PUBLIC_BASE_URL || "https://portfolio-prabhat-kumars-projects.vercel.app",
+  url: process.env.NEXT_PUBLIC_BASE_URL || "https://www.prabhat-dev.me",
   description:
     "Prabhat Kumar — Associate Software Engineer @ MAQ Software building production-ready systems across full-stack, backend, data, and AI.",
   keywords: [
@@ -53,7 +53,7 @@ export const USER = {
   mapsQuery: "Noida, India",
   email: "pk993105@gmail.com",
   phone: "+91-9508849044",
-  website: "https://portfolio-prabhat-kumars-projects.vercel.app",
+  website: "https://www.prabhat-dev.me",
   avatar: "/images/hero.png",
   timeZone: "Asia/Kolkata",
   pronouns: "he/him",
