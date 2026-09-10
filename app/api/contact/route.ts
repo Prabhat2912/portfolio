@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
     if (!firstName || !lastName || !email || !message) {
       return NextResponse.json(
         { success: false, error: "Missing required fields" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
 
     // Email to recipient (you)
     const recipientMailOptions = {
-      from: process.env.EMAIL_USER,
+      from: `"Portfolio" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_TO,
       subject: "New Contact Form Submission",
       text: `
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
 
     // Email to user (acknowledgment)
     const userMailOptions = {
-      from: process.env.EMAIL_USER,
+      from: `"Prabhat" <${process.env.EMAIL_USER}>`,
       to: email, // User's email from the form
       subject: "Thank You for Contacting Us!",
       text: `
@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
     console.error("Error sending email:", error);
     return NextResponse.json(
       { success: false, error: "Error sending email" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
