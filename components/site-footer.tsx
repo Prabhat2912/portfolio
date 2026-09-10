@@ -23,7 +23,7 @@ export function SiteFooter() {
             <PkMark className="h-5 w-auto text-muted-foreground" />
           </div>
           <div className="flex items-center border-x border-line bg-background px-2">
-            {SOCIALS.slice(0, 4).map((s) => {
+            {SOCIALS.slice(0, 5).map((s) => {
               const Brand = socialIconFor(s.name);
               const Icon = Brand ?? Mail;
               return (

@@ -99,6 +99,7 @@ export type Social = {
 export const SOCIALS: Social[] = [
   { name: "github", title: "GitHub", handle: "@Prabhat2912", href: "https://github.com/Prabhat2912" },
   { name: "linkedin", title: "LinkedIn", handle: "real-prabhat", href: "https://www.linkedin.com/in/real-prabhat/" },
+  { name: "instagram", title: "Instagram", handle: "@real_prabhat1", href: "https://www.instagram.com/real_prabhat1/" },
   { name: "email", title: "Email", handle: "pk993105@gmail.com", href: "mailto:pk993105@gmail.com" },
   { name: "links", title: "Codolio", handle: "real_prabhat", href: "https://codolio.com/profile/real_prabhat" },
 ];
