@@ -17,10 +17,10 @@ export const SITE = {
   tagline: "Software Engineer — full-stack, data & AI.",
   url: process.env.NEXT_PUBLIC_BASE_URL || "https://www.prabhat-dev.me",
   description:
-    "Prabhat Kumar — Associate Software Engineer @ MAQ Software building production-ready systems across full-stack, backend, data, and AI.",
+    "Prabhat Kumar — Software Engineer building production-ready systems across full-stack, backend, data, and AI.",
   keywords: [
     "Prabhat Kumar",
-    "Associate Software Engineer",
+    "Software Engineer",
     "MAQ Software",
     "Full Stack Developer",
     ".NET",
@@ -41,10 +41,10 @@ export const USER = {
   lastName: "Kumar",
   displayName: "Prabhat Kumar",
   username: "real-prabhat",
-  jobTitle: "Associate Software Engineer",
-  bio: "Software Engineer @ MAQ Software. Full-stack, data & AI.",
+  jobTitle: "Software Engineer",
+  bio: "Software Engineer. Full-stack, data & AI.",
   flipSentences: [
-    "Software Engineer @ MAQ Software.",
+    "Software Engineer.",
     "Full-stack • Data • AI.",
     ".NET • React • Fabric • Azure.",
     "Building agentic AI systems.",
@@ -59,7 +59,7 @@ export const USER = {
   pronouns: "he/him",
   availability: "Open to work",
   about: [
-    "I'm Prabhat Kumar — a Software Engineer @ MAQ Software building production-ready systems across full-stack, backend, data, and AI.",
+    "I'm Prabhat Kumar — a Software Engineer building production-ready systems across full-stack, backend, data, and AI.",
     "Experienced with .NET, TypeScript, React, Next.js, Python, SQL, Microsoft Fabric, Azure, and data engineering. Currently building AI-powered applications and multi-agent systems, with a strong interest in scalable systems, cloud technologies, and intelligent automation.",
   ],
   resumeUrl: "/resume.pdf",
@@ -73,8 +73,17 @@ export type Job = {
 };
 
 export const JOBS: Job[] = [
-  { title: "Associate Software Engineer", company: "MAQ Software", website: "https://maqsoftware.com", anchor: "#experience" },
-  { title: "B.Tech CSE (AI&ML)", company: "Galgotias University", anchor: "#education" },
+  {
+    title: "Software Engineer",
+    company: "Ex-MAQ Software",
+    website: "https://maqsoftware.com",
+    anchor: "#experience",
+  },
+  {
+    title: "B.Tech CSE (AI&ML)",
+    company: "Galgotias University",
+    anchor: "#education",
+  },
 ];
 
 // ─── Navigation ─────────────────────────────────────────────────────────────
@@ -97,11 +106,36 @@ export type Social = {
 };
 
 export const SOCIALS: Social[] = [
-  { name: "github", title: "GitHub", handle: "@Prabhat2912", href: "https://github.com/Prabhat2912" },
-  { name: "linkedin", title: "LinkedIn", handle: "real-prabhat", href: "https://www.linkedin.com/in/real-prabhat/" },
-  { name: "instagram", title: "Instagram", handle: "@real_prabhat1", href: "https://www.instagram.com/real_prabhat1/" },
-  { name: "email", title: "Email", handle: "pk993105@gmail.com", href: "mailto:pk993105@gmail.com" },
-  { name: "links", title: "Codolio", handle: "real_prabhat", href: "https://codolio.com/profile/real_prabhat" },
+  {
+    name: "github",
+    title: "GitHub",
+    handle: "@Prabhat2912",
+    href: "https://github.com/Prabhat2912",
+  },
+  {
+    name: "linkedin",
+    title: "LinkedIn",
+    handle: "real-prabhat",
+    href: "https://www.linkedin.com/in/real-prabhat/",
+  },
+  {
+    name: "instagram",
+    title: "Instagram",
+    handle: "@real_prabhat1",
+    href: "https://www.instagram.com/real_prabhat1/",
+  },
+  {
+    name: "email",
+    title: "Email",
+    handle: "pk993105@gmail.com",
+    href: "mailto:pk993105@gmail.com",
+  },
+  {
+    name: "links",
+    title: "Codolio",
+    handle: "real_prabhat",
+    href: "https://codolio.com/profile/real_prabhat",
+  },
 ];
 
 // ─── Tech stack ─────────────────────────────────────────────────────────────
@@ -110,36 +144,186 @@ export type TechItem = {
   key: string;
   title: string;
   href: string;
-  category: "Language" | "Frontend" | "Backend" | "Data & Cloud" | "AI" | "Workflow & Tools";
+  category:
+    | "Language"
+    | "Frontend"
+    | "Backend"
+    | "Data & Cloud"
+    | "AI"
+    | "Workflow & Tools";
   /** Brand-icon slug rendered from components/icons.tsx. "" = monogram fallback. */
   icon: string;
 };
 
 export const TECH_STACK: TechItem[] = [
-  { key: "cpp", title: "C++", href: "https://isocpp.org", category: "Language", icon: "cpp" },
-  { key: "c", title: "C", href: "https://en.wikipedia.org/wiki/C_(programming_language)", category: "Language", icon: "c" },
-  { key: "csharp", title: "C#", href: "https://learn.microsoft.com/en-us/dotnet/csharp/", category: "Language", icon: "" },
-  { key: "javascript", title: "JavaScript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", category: "Language", icon: "javascript" },
-  { key: "typescript", title: "TypeScript", href: "https://www.typescriptlang.org", category: "Language", icon: "typescript" },
-  { key: "python", title: "Python", href: "https://www.python.org", category: "Language", icon: "python" },
-  { key: "sql", title: "SQL", href: "https://en.wikipedia.org/wiki/SQL", category: "Language", icon: "" },
-  { key: "react", title: "React", href: "https://react.dev", category: "Frontend", icon: "react" },
-  { key: "nextjs", title: "Next.js", href: "https://nextjs.org", category: "Frontend", icon: "nextjs" },
-  { key: "tailwind", title: "Tailwind CSS", href: "https://tailwindcss.com", category: "Frontend", icon: "tailwind" },
-  { key: "aspnet", title: "ASP.NET Core", href: "https://dotnet.microsoft.com/en-us/apps/aspnet", category: "Backend", icon: "dotnet" },
-  { key: "nodejs", title: "Node.js", href: "https://nodejs.org", category: "Backend", icon: "nodejs" },
-  { key: "express", title: "Express", href: "https://expressjs.com", category: "Backend", icon: "express" },
-  { key: "rest", title: "REST API", href: "https://restfulapi.net", category: "Backend", icon: "" },
-  { key: "sqlserver", title: "SQL Server", href: "https://www.microsoft.com/en-us/sql-server", category: "Data & Cloud", icon: "" },
-  { key: "postgresql", title: "PostgreSQL", href: "https://www.postgresql.org", category: "Data & Cloud", icon: "postgresql" },
-  { key: "mongodb", title: "MongoDB", href: "https://www.mongodb.com", category: "Data & Cloud", icon: "mongodb" },
-  { key: "fabric", title: "Microsoft Fabric", href: "https://www.microsoft.com/en-us/microsoft-fabric", category: "Data & Cloud", icon: "" },
-  { key: "azure", title: "Azure", href: "https://azure.microsoft.com", category: "Data & Cloud", icon: "" },
-  { key: "maf", title: "Microsoft Agent Framework", href: "https://learn.microsoft.com/en-us/agent-framework/", category: "AI", icon: "" },
-  { key: "git", title: "Git", href: "https://git-scm.com", category: "Workflow & Tools", icon: "git" },
-  { key: "github", title: "GitHub", href: "https://github.com", category: "Workflow & Tools", icon: "github" },
-  { key: "azuredevops", title: "Azure DevOps", href: "https://azure.microsoft.com/en-us/products/devops", category: "Workflow & Tools", icon: "" },
-  { key: "vercel", title: "Vercel", href: "https://vercel.com", category: "Workflow & Tools", icon: "vercel" },
+  {
+    key: "cpp",
+    title: "C++",
+    href: "https://isocpp.org",
+    category: "Language",
+    icon: "cpp",
+  },
+  {
+    key: "c",
+    title: "C",
+    href: "https://en.wikipedia.org/wiki/C_(programming_language)",
+    category: "Language",
+    icon: "c",
+  },
+  {
+    key: "csharp",
+    title: "C#",
+    href: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    category: "Language",
+    icon: "",
+  },
+  {
+    key: "javascript",
+    title: "JavaScript",
+    href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    category: "Language",
+    icon: "javascript",
+  },
+  {
+    key: "typescript",
+    title: "TypeScript",
+    href: "https://www.typescriptlang.org",
+    category: "Language",
+    icon: "typescript",
+  },
+  {
+    key: "python",
+    title: "Python",
+    href: "https://www.python.org",
+    category: "Language",
+    icon: "python",
+  },
+  {
+    key: "sql",
+    title: "SQL",
+    href: "https://en.wikipedia.org/wiki/SQL",
+    category: "Language",
+    icon: "",
+  },
+  {
+    key: "react",
+    title: "React",
+    href: "https://react.dev",
+    category: "Frontend",
+    icon: "react",
+  },
+  {
+    key: "nextjs",
+    title: "Next.js",
+    href: "https://nextjs.org",
+    category: "Frontend",
+    icon: "nextjs",
+  },
+  {
+    key: "tailwind",
+    title: "Tailwind CSS",
+    href: "https://tailwindcss.com",
+    category: "Frontend",
+    icon: "tailwind",
+  },
+  {
+    key: "aspnet",
+    title: "ASP.NET Core",
+    href: "https://dotnet.microsoft.com/en-us/apps/aspnet",
+    category: "Backend",
+    icon: "dotnet",
+  },
+  {
+    key: "nodejs",
+    title: "Node.js",
+    href: "https://nodejs.org",
+    category: "Backend",
+    icon: "nodejs",
+  },
+  {
+    key: "express",
+    title: "Express",
+    href: "https://expressjs.com",
+    category: "Backend",
+    icon: "express",
+  },
+  {
+    key: "rest",
+    title: "REST API",
+    href: "https://restfulapi.net",
+    category: "Backend",
+    icon: "",
+  },
+  {
+    key: "sqlserver",
+    title: "SQL Server",
+    href: "https://www.microsoft.com/en-us/sql-server",
+    category: "Data & Cloud",
+    icon: "",
+  },
+  {
+    key: "postgresql",
+    title: "PostgreSQL",
+    href: "https://www.postgresql.org",
+    category: "Data & Cloud",
+    icon: "postgresql",
+  },
+  {
+    key: "mongodb",
+    title: "MongoDB",
+    href: "https://www.mongodb.com",
+    category: "Data & Cloud",
+    icon: "mongodb",
+  },
+  {
+    key: "fabric",
+    title: "Microsoft Fabric",
+    href: "https://www.microsoft.com/en-us/microsoft-fabric",
+    category: "Data & Cloud",
+    icon: "",
+  },
+  {
+    key: "azure",
+    title: "Azure",
+    href: "https://azure.microsoft.com",
+    category: "Data & Cloud",
+    icon: "",
+  },
+  {
+    key: "maf",
+    title: "Microsoft Agent Framework",
+    href: "https://learn.microsoft.com/en-us/agent-framework/",
+    category: "AI",
+    icon: "",
+  },
+  {
+    key: "git",
+    title: "Git",
+    href: "https://git-scm.com",
+    category: "Workflow & Tools",
+    icon: "git",
+  },
+  {
+    key: "github",
+    title: "GitHub",
+    href: "https://github.com",
+    category: "Workflow & Tools",
+    icon: "github",
+  },
+  {
+    key: "azuredevops",
+    title: "Azure DevOps",
+    href: "https://azure.microsoft.com/en-us/products/devops",
+    category: "Workflow & Tools",
+    icon: "",
+  },
+  {
+    key: "vercel",
+    title: "Vercel",
+    href: "https://vercel.com",
+    category: "Workflow & Tools",
+    icon: "vercel",
+  },
 ];
 
 // ─── Experience ─────────────────────────────────────────────────────────────
@@ -170,12 +354,12 @@ export const EXPERIENCES: Experience[] = [
     website: "https://maqsoftware.com",
     location: "Noida, India",
     locationType: "On-site",
-    current: true,
     positions: [
       {
         title: "Associate Software Engineer",
         employmentType: "Internship",
         start: "11.2025",
+        end: "09.2026",
         description: [
           "Independently own and deliver user stories end-to-end for a client-facing React + ASP.NET Core data visualization app serving 50+ users.",
           "Develop and maintain backend APIs and business logic in C# with a Microsoft Fabric lakehouse data layer.",
@@ -183,7 +367,16 @@ export const EXPERIENCES: Experience[] = [
           "Evaluate technical approaches independently through exploration and spike work.",
           "Integrate Microsoft Fabric pipelines and Azure data workflows into enterprise reporting solutions.",
         ],
-        skills: ["React", "ASP.NET Core", "C#", "TypeScript", "Microsoft Fabric", "Azure", "SQL", "Agentic AI"],
+        skills: [
+          "React",
+          "ASP.NET Core",
+          "C#",
+          "TypeScript",
+          "Microsoft Fabric",
+          "Azure",
+          "SQL",
+          "Agentic AI",
+        ],
       },
     ],
   },
@@ -255,7 +448,8 @@ export const PROJECTS: Project[] = [
     title: "AI Mock Interview Platform",
     date: "2024",
     link: "https://gemini-ai-mock-interview.vercel.app/",
-    description: "AI-powered mock interviews with feedback. Built with Next.js, Gemini API and Tailwind.",
+    description:
+      "AI-powered mock interviews with feedback. Built with Next.js, Gemini API and Tailwind.",
     skills: ["Next.js", "AI", "Tailwind CSS"],
     featured: true,
   },
@@ -273,7 +467,8 @@ export const PROJECTS: Project[] = [
     title: "Full Stack Quiz App",
     date: "2024",
     link: "https://quiz-app-frontend-prabhat.vercel.app/",
-    description: "Full-stack quiz platform with auth, leaderboard and admin panel.",
+    description:
+      "Full-stack quiz platform with auth, leaderboard and admin panel.",
     skills: ["MERN", "REST API"],
   },
   {
@@ -281,7 +476,8 @@ export const PROJECTS: Project[] = [
     title: "Mini Database Engine (C++)",
     date: "2024",
     link: "https://github.com/Prabhat2912/mini-database-engine",
-    description: "A from-scratch relational engine prototype in C++: parsing, storage, indexing.",
+    description:
+      "A from-scratch relational engine prototype in C++: parsing, storage, indexing.",
     skills: ["C++", "DSA", "Systems"],
   },
   {
@@ -289,7 +485,8 @@ export const PROJECTS: Project[] = [
     title: "3D Solar System",
     date: "2023",
     link: "https://nasa-space-app-challenge-beta.vercel.app/",
-    description: "Interactive 3D solar-system explorer (NASA Space Apps Challenge).",
+    description:
+      "Interactive 3D solar-system explorer (NASA Space Apps Challenge).",
     skills: ["React", "Three.js"],
   },
   {
@@ -321,12 +518,32 @@ export const PROJECTS: Project[] = [
 // ─── Services (What I do) ───────────────────────────────────────────────────
 
 export const SERVICES = [
-  { title: "Web Applications", description: "Tailored web apps built with the latest technologies." },
-  { title: "Frontend", description: "Engaging, responsive interfaces with React, Next.js and Tailwind." },
-  { title: "Backend", description: "Scalable APIs and business logic with .NET, Node and Express." },
-  { title: "Mobile", description: "Cross-platform mobile apps for iOS and Android." },
-  { title: "Data Engineering", description: "Pipelines, lakehouses and ETL with Fabric, Azure and SQL." },
-  { title: "Agentic AI Engineering", description: "RAG pipelines and multi-agent systems that reason over data." },
+  {
+    title: "Web Applications",
+    description: "Tailored web apps built with the latest technologies.",
+  },
+  {
+    title: "Frontend",
+    description:
+      "Engaging, responsive interfaces with React, Next.js and Tailwind.",
+  },
+  {
+    title: "Backend",
+    description:
+      "Scalable APIs and business logic with .NET, Node and Express.",
+  },
+  {
+    title: "Mobile",
+    description: "Cross-platform mobile apps for iOS and Android.",
+  },
+  {
+    title: "Data Engineering",
+    description: "Pipelines, lakehouses and ETL with Fabric, Azure and SQL.",
+  },
+  {
+    title: "Agentic AI Engineering",
+    description: "RAG pipelines and multi-agent systems that reason over data.",
+  },
 ] as const;
 
 // ─── Stats ──────────────────────────────────────────────────────────────────
