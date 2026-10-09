@@ -389,6 +389,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "elitekods",
     company: "EliteKods",
+    website: "https://elitekods.com/",
     location: "India",
     locationType: "Remote",
     positions: [
