@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Caveat, Inter, JetBrains_Mono } from "next/font/google";
+// @ts-expect-error CSS files are handled by Next.js at build time.
 import "./globals.css";
 import { Toaster } from "sonner";
 import { Providers } from "@/components/providers";
@@ -12,18 +13,22 @@ import { SITE } from "@/Data/portfolio";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
-const hand = Caveat({ subsets: ["latin"], variable: "--font-hand", weight: ["500", "600"] });
+const hand = Caveat({
+  subsets: ["latin"],
+  variable: "--font-hand",
+  weight: ["500", "600"],
+});
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE.name} — Full Stack Web Developer`,
+    default: `${SITE.name} Software Engineer`,
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
   keywords: [...SITE.keywords],
   metadataBase: new URL(SITE.url),
   openGraph: {
-    title: `${SITE.name} — Full Stack Web Developer`,
+    title: `${SITE.name} Software Engineer`,
     description: SITE.description,
     url: SITE.url,
     type: "website",
@@ -32,16 +37,22 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — Full Stack Web Developer`,
+    title: `${SITE.name} Software Engineer`,
     description: SITE.description,
     images: [SITE.ogImage],
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${mono.variable} ${hand.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${mono.variable} ${hand.variable} font-sans antialiased`}
+      >
         <Providers>
           <Toaster theme="system" richColors position="bottom-right" />
           <div id="top" />
