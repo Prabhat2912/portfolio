@@ -451,26 +451,6 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    id: "mini-database-engine",
-    title: "Mini Database Engine",
-    date: "2024",
-    link: "https://github.com/Prabhat2912/mini-database-engine",
-    description:
-      "Built a relational database engine in C++ featuring SQL parsing, query execution, B-tree indexing, buffer pool caching, write-ahead logging, transaction management, and persistent storage.",
-    skills: ["C++", "SQL", "B-Trees", "Storage Systems"],
-    featured: true,
-  },
-  {
-    id: "crypto-matching-engine",
-    title: "Cryptocurrency Matching Engine",
-    date: "2026",
-    link: "https://github.com/Prabhat2912/high-performance-cryptocurrency-matching-engine",
-    description:
-      "Developed a C++ order-matching engine implementing price-time priority, market and limit orders, IOC/FOK execution, REST APIs, WebSocket market feeds, and thread-safe order-book management.",
-    skills: ["C++", "Concurrency", "REST API", "WebSockets"],
-    featured: true,
-  },
-  {
     id: "ai-mock-interview",
     title: "AI Mock Interview Platform",
     date: "2024",
@@ -490,6 +470,27 @@ export const PROJECTS: Project[] = [
     skills: ["React", "Node.js", "Express.js", "MongoDB", "Gemini API"],
     featured: true,
   },
+  {
+    id: "mini-database-engine",
+    title: "Mini Database Engine",
+    date: "2024",
+    link: "https://github.com/Prabhat2912/mini-database-engine",
+    description:
+      "Built a relational database engine in C++ featuring SQL parsing, query execution, B-tree indexing, buffer pool caching, write-ahead logging, transaction management, and persistent storage.",
+    skills: ["C++", "SQL", "B-Trees", "Storage Systems"],
+    featured: true,
+  },
+  {
+    id: "crypto-matching-engine",
+    title: "Cryptocurrency Matching Engine",
+    date: "2026",
+    link: "https://github.com/Prabhat2912/high-performance-cryptocurrency-matching-engine",
+    description:
+      "Developed a C++ order-matching engine implementing price-time priority, market and limit orders, IOC/FOK execution, REST APIs, WebSocket market feeds, and thread-safe order-book management.",
+    skills: ["C++", "Concurrency", "REST API", "WebSockets"],
+    featured: true,
+  },
+
   {
     id: "collaborative-whiteboard",
     title: "Real-Time Collaborative Whiteboard",
