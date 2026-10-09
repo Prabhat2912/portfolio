@@ -59,7 +59,7 @@ export const USER = {
   pronouns: "he/him",
   availability: "Open to work",
   about: [
-    "I'm Prabhat Kumar — a software engineer specializing in backend development, data engineering, and Agentic AI solutions. I work with technologies like C#, .NET, React, SQL, Microsoft Fabric, Azure, and LLM-based systems to build scalable applications, intelligent automation solutions, and AI-powered workflows. My experience includes developing REST APIs, migrating data pipelines, building RAG-based systems, and designing multi-agent architectures. I enjoy solving real-world problems, exploring emerging technologies, and building reliable, user-centric solutions while continuously expanding my technical skills.",
+    "I'm Prabhat Kumar, a software engineer building scalable applications, data-driven systems, and Agentic AI solutions. Experienced in .NET, Azure, Microsoft Fabric, and LLM-powered workflows, passionate about turning complex problems into practical, intelligent solutions.",
   ],
   resumeUrl: "/resume.pdf",
 } as const;
