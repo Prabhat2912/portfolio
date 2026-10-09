@@ -20,14 +20,14 @@ const hand = Caveat({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE.name} Software Engineer`,
+    default: `${SITE.name} | Software Engineer`,
     template: `%s · ${SITE.name}`,
   },
   description: SITE.description,
   keywords: [...SITE.keywords],
   metadataBase: new URL(SITE.url),
   openGraph: {
-    title: `${SITE.name} Software Engineer`,
+    title: `${SITE.name} | Software Engineer`,
     description: SITE.description,
     url: SITE.url,
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} Software Engineer`,
+    title: `${SITE.name} | Software Engineer`,
     description: SITE.description,
     images: [SITE.ogImage],
   },
