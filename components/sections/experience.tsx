@@ -1,6 +1,10 @@
 "use client";
 
-import { ChevronsUpDown, CodeXml, Infinity as InfinityIcon } from "lucide-react";
+import {
+  ChevronsUpDown,
+  CodeXml,
+  Infinity as InfinityIcon,
+} from "lucide-react";
 import { EXPERIENCES } from "@/Data/portfolio";
 import { Panel, PanelHeader, PanelTitle } from "@/components/ui/panel";
 import { PanelTitleCopy } from "@/components/panel-title-copy";
@@ -37,7 +41,12 @@ export function Experience() {
               <div className="flex min-w-0 flex-1 flex-col gap-x-3 gap-y-1 pr-1 sm:flex-row sm:items-baseline sm:justify-between">
                 <h3 className="text-xl/6 font-medium">
                   {exp.website ? (
-                    <a className="link" href={exp.website} target="_blank" rel="noopener">
+                    <a
+                      className="link"
+                      href={exp.website}
+                      target="_blank"
+                      rel="noopener"
+                    >
                       {exp.company}
                     </a>
                   ) : (
@@ -72,12 +81,12 @@ export function Experience() {
                 return (
                   <Collapsible
                     key={pos.title}
-                    defaultOpen={pi === 0}
+                    defaultOpen={false}
                     chevron={false}
                     className="group/experience-position relative"
                     triggerClassName={cn(
                       "group relative outline-none",
-                      "before:absolute before:-top-1 before:-right-1 before:-bottom-1.5 before:left-7 before:z-[-1] before:rounded-lg before:transition-[background-color] before:ease-out hover:before:bg-accent-muted"
+                      "before:absolute before:-top-1 before:-right-1 before:-bottom-1.5 before:left-7 before:z-[-1] before:rounded-lg before:transition-[background-color] before:ease-out hover:before:bg-accent-muted",
                     )}
                     header={
                       <>
@@ -88,7 +97,9 @@ export function Experience() {
                           <IconTile>
                             <CodeXml />
                           </IconTile>
-                          <h4 className="flex-1 font-medium text-balance">{pos.title}</h4>
+                          <h4 className="flex-1 font-medium text-balance">
+                            {pos.title}
+                          </h4>
                           <div className="shrink-0 text-muted-foreground [&_svg]:size-4">
                             <ChevronsUpDown />
                           </div>
@@ -98,7 +109,10 @@ export function Experience() {
                             <dt className="sr-only">Employment Type</dt>
                             <dd>{pos.employmentType}</dd>
                           </div>
-                          <span className="h-4 w-px self-center bg-border" aria-hidden />
+                          <span
+                            className="h-4 w-px self-center bg-border"
+                            aria-hidden
+                          />
                           <div>
                             <dt className="sr-only">Employment Period</dt>
                             <dd className="flex items-center gap-0.5 tabular-nums">
@@ -107,13 +121,20 @@ export function Experience() {
                               {pos.end ? (
                                 <span>{pos.end}</span>
                               ) : (
-                                <InfinityIcon className="size-[18px] translate-y-[0.5px]" aria-label="Present" strokeWidth={1.5} />
+                                <InfinityIcon
+                                  className="size-[18px] translate-y-[0.5px]"
+                                  aria-label="Present"
+                                  strokeWidth={1.5}
+                                />
                               )}
                             </dd>
                           </div>
                           {duration && (
                             <>
-                              <span className="h-4 w-px self-center bg-border" aria-hidden />
+                              <span
+                                className="h-4 w-px self-center bg-border"
+                                aria-hidden
+                              />
                               <div>
                                 <dt className="sr-only">Duration</dt>
                                 <dd className="tabular-nums">{duration}</dd>
