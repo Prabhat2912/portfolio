@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Caveat, Inter, JetBrains_Mono } from "next/font/google";
-// @ts-expect-error CSS files are handled by Next.js at build time.
 import "./globals.css";
 import { Toaster } from "sonner";
 import { Providers } from "@/components/providers";
