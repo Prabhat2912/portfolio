@@ -8,16 +8,16 @@ import {
 
 export const BaseInfo: BaseInfos = {
   name: "Prabhat Kumar",
-  position: "Full Stack Web Developer",
+  position: "Software Engineer",
   description:
-    "I’m a full-stack web developer skilled in the MERN stack and modern tools like Next.js, Tailwind CSS, and React Native. Passionate about building scalable, user-friendly applications, I aim to deliver innovative solutions. Currently pursuing a B.Tech in Computer Science, I’m always learning and growing in the tech world.",
+    "I’m a software engineer skilled in backend development, data engineering, and Agentic AI solutions. Passionate about building scalable, user-friendly applications, I enjoy solving real-world problems through technology and developing intelligent, reliable solutions. As a Computer Science graduate, I’m continuously exploring emerging technologies and expanding my skills to build impactful software and AI-powered systems.",
   profilePic: "/images/hero.png",
 };
 
 export const aboutInfo: AboutData = {
   title: "Crafting Web Application with Passion and Precision",
   description:
-    "I am a full-stack web developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js) with expertise in Next.js, Tailwind CSS, and React Native. I build scalable, responsive applications and use tools like GitHub, VS Code, and Vercel for seamless development and deployment. Currently pursuing a B.Tech in Computer Science, I focus on creating high-quality, user-centric solutions while continuously evolving my skills to keep up with industry trends",
+    "I am a software engineer specializing in backend development, data engineering, and Agentic AI solutions. I work with technologies like C#, .NET, React, SQL, Microsoft Fabric, Azure, and LLM-based systems to build scalable applications, intelligent automation solutions, and AI-powered workflows. My experience includes developing REST APIs, migrating data pipelines, building RAG-based systems, and designing multi-agent architectures. I enjoy solving real-world problems, exploring emerging technologies, and building reliable, user-centric solutions while continuously expanding my technical skills.",
 
   skills: [
     {
@@ -40,8 +40,8 @@ export const aboutInfo: AboutData = {
   stats: [
     {
       name: "Experience",
-      value: "10+",
-      description: "Months of Industrial Experience",
+      value: "1+",
+      description: "year of Industrial Experience",
       image: "/images/experience.png",
     },
     {

@@ -59,8 +59,7 @@ export const USER = {
   pronouns: "he/him",
   availability: "Open to work",
   about: [
-    "I'm Prabhat Kumar — a Software Engineer building production-ready systems across full-stack, backend, data, and AI.",
-    "Experienced with .NET, TypeScript, React, Next.js, Python, SQL, Microsoft Fabric, Azure, and data engineering. Currently building AI-powered applications and multi-agent systems, with a strong interest in scalable systems, cloud technologies, and intelligent automation.",
+    "I'm Prabhat Kumar — a software engineer specializing in backend development, data engineering, and Agentic AI solutions. I work with technologies like C#, .NET, React, SQL, Microsoft Fabric, Azure, and LLM-based systems to build scalable applications, intelligent automation solutions, and AI-powered workflows. My experience includes developing REST APIs, migrating data pipelines, building RAG-based systems, and designing multi-agent architectures. I enjoy solving real-world problems, exploring emerging technologies, and building reliable, user-centric solutions while continuously expanding my technical skills.",
   ],
   resumeUrl: "/resume.pdf",
 } as const;
@@ -297,6 +296,13 @@ export const TECH_STACK: TechItem[] = [
     icon: "",
   },
   {
+    key: "LangChain",
+    title: "LangChain",
+    href: "https://langchain.com",
+    category: "AI",
+    icon: "langchain",
+  },
+  {
     key: "git",
     title: "Git",
     href: "https://git-scm.com",
@@ -361,11 +367,11 @@ export const EXPERIENCES: Experience[] = [
         start: "11.2025",
         end: "09.2026",
         description: [
-          "Independently own and deliver user stories end-to-end for a client-facing React + ASP.NET Core data visualization app serving 50+ users.",
-          "Develop and maintain backend APIs and business logic in C# with a Microsoft Fabric lakehouse data layer.",
-          "Building a multi-agentic AI system that answers natural-language questions over data and generates reports.",
-          "Evaluate technical approaches independently through exploration and spike work.",
-          "Integrate Microsoft Fabric pipelines and Azure data workflows into enterprise reporting solutions.",
+          "Independently owned and delivered user stories end-to-end for a client-facing React + ASP.NET Core data visualization application used by a 30+ member enterprise marketing team.",
+          "Developed and enhanced C# backend APIs and business logic, integrating Microsoft Fabric lakehouse data into application workflows and analytics.",
+          "Implemented multiple agentic AI use cases for natural-language data analysis and report generation, achieving 80%+ accuracy against validated data.",
+          "Developed and maintained 6+ Microsoft Fabric pipelines, notebooks, and data workflows supporting enterprise reporting and analytics.",
+          "Independently conducted 3 technical spikes to evaluate architecture, tooling, and implementation approaches before development.",
         ],
         skills: [
           "React",
@@ -444,22 +450,33 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "mini-database-engine",
+    title: "Mini Database Engine",
+    date: "2024",
+    link: "https://github.com/Prabhat2912/mini-database-engine",
+    description:
+      "Built a relational database engine in C++ featuring SQL parsing, query execution, B-tree indexing, buffer pool caching, write-ahead logging, transaction management, and persistent storage.",
+    skills: ["C++", "SQL", "B-Trees", "Storage Systems"],
+    featured: true,
+  },
+  {
+    id: "crypto-matching-engine",
+    title: "Cryptocurrency Matching Engine",
+    date: "2026",
+    link: "https://github.com/Prabhat2912/high-performance-cryptocurrency-matching-engine",
+    description:
+      "Developed a C++ order-matching engine implementing price-time priority, market and limit orders, IOC/FOK execution, REST APIs, WebSocket market feeds, and thread-safe order-book management.",
+    skills: ["C++", "Concurrency", "REST API", "WebSockets"],
+    featured: true,
+  },
+  {
     id: "ai-mock-interview",
     title: "AI Mock Interview Platform",
     date: "2024",
     link: "https://gemini-ai-mock-interview.vercel.app/",
     description:
-      "AI-powered mock interviews with feedback. Built with Next.js, Gemini API and Tailwind.",
-    skills: ["Next.js", "AI", "Tailwind CSS"],
-    featured: true,
-  },
-  {
-    id: "whiteboard",
-    title: "Collaborative Whiteboard",
-    date: "2024",
-    link: "https://collabrative-whiteboard.vercel.app/",
-    description: "Real-time collaborative drawing board with live sync.",
-    skills: ["React", "WebSockets", "Canvas"],
+      "Built an AI-powered interview platform with Gemini integration and a behavioral-analysis backend that processes video and audio signals to estimate interview confidence, nervousness, and stress indicators.",
+    skills: ["Next.js", "Gemini API", "Python", "OpenCV", "Audio Processing"],
     featured: true,
   },
   {
@@ -468,50 +485,29 @@ export const PROJECTS: Project[] = [
     date: "2024",
     link: "https://quiz-app-frontend-prabhat.vercel.app/",
     description:
-      "Full-stack quiz platform with auth, leaderboard and admin panel.",
-    skills: ["MERN", "REST API"],
+      "Built a full-stack quiz platform with JWT authentication, role-based access, AI-powered question generation and explanations, exam management, performance analytics, leaderboards, and gamified progress tracking.",
+    skills: ["React", "Node.js", "Express.js", "MongoDB", "Gemini API"],
+    featured: true,
   },
   {
-    id: "db-engine",
-    title: "Mini Database Engine (C++)",
-    date: "2024",
-    link: "https://github.com/Prabhat2912/mini-database-engine",
+    id: "collaborative-whiteboard",
+    title: "Real-Time Collaborative Whiteboard",
+    date: "2026",
+    link: "https://collabrative-whiteboard.vercel.app/",
     description:
-      "A from-scratch relational engine prototype in C++: parsing, storage, indexing.",
-    skills: ["C++", "DSA", "Systems"],
+      "Built a real-time collaborative whiteboard with live cursors, shared drawing tools, layer management, user presence, and organization-based boards, enabling multiple users to collaborate on the same canvas.",
+    skills: ["Next.js", "React", "TypeScript", "Convex", "Liveblocks", "Clerk"],
+    featured: true,
   },
   {
-    id: "solar-system",
-    title: "3D Solar System",
-    date: "2023",
-    link: "https://nasa-space-app-challenge-beta.vercel.app/",
+    id: "youtube-replica",
+    title: "PlayTube - Full Stack Video Platform",
+    date: "2026",
+    link: "https://github.com/Prabhat2912/Youtube-Replica",
     description:
-      "Interactive 3D solar-system explorer (NASA Space Apps Challenge).",
-    skills: ["React", "Three.js"],
-  },
-  {
-    id: "cryptoverse",
-    title: "Cryptoverse",
-    date: "2023",
-    link: "https://crypto-two-fawn.vercel.app/",
-    description: "Crypto tracker with live prices, charts and news.",
-    skills: ["React", "REST API"],
-  },
-  {
-    id: "weather",
-    title: "Weather App",
-    date: "2023",
-    link: "https://weatherio-prabhat.vercel.app/#/current-location",
-    description: "Location-aware weather app with forecasts and clean UI.",
-    skills: ["React", "REST API"],
-  },
-  {
-    id: "bubble-game",
-    title: "Bubble Game",
-    date: "2023",
-    link: "https://bubblegame-prabhat.vercel.app/",
-    description: "Fast, fun browser game with score mechanics.",
-    skills: ["JavaScript", "CSS"],
+      "Developed a full-stack video-sharing platform with a React frontend and Express/MongoDB backend, featuring JWT authentication with refresh tokens, email OTP verification, video uploads, streaming, comments, likes, subscriptions, playlists, and creator dashboards.",
+    skills: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary"],
+    featured: true,
   },
 ];
 
