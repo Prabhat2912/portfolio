@@ -516,29 +516,33 @@ export const PROJECTS: Project[] = [
 export const SERVICES = [
   {
     title: "Web Applications",
-    description: "Tailored web apps built with the latest technologies.",
-  },
-  {
-    title: "Frontend",
     description:
-      "Engaging, responsive interfaces with React, Next.js and Tailwind.",
+      "End-to-end web applications built with modern technologies and scalable architectures.",
   },
   {
-    title: "Backend",
+    title: "Frontend Development",
     description:
-      "Scalable APIs and business logic with .NET, Node and Express.",
+      "Responsive, intuitive user interfaces built with React, Next.js, TypeScript and Tailwind CSS.",
   },
   {
-    title: "Mobile",
-    description: "Cross-platform mobile apps for iOS and Android.",
+    title: "Backend Development",
+    description:
+      "Secure APIs, business logic and backend systems using .NET, C#, Node.js and Express.",
+  },
+  {
+    title: "Azure Cloud Services",
+    description:
+      "Cloud-native solutions, API integrations, data workflows and deployments using Microsoft Azure.",
   },
   {
     title: "Data Engineering",
-    description: "Pipelines, lakehouses and ETL with Fabric, Azure and SQL.",
+    description:
+      "Scalable data pipelines, ETL workflows and medallion architectures using Microsoft Fabric, Azure and SQL.",
   },
   {
-    title: "Agentic AI Engineering",
-    description: "RAG pipelines and multi-agent systems that reason over data.",
+    title: "AI Engineer",
+    description:
+      "Building intelligent AI applications with LLMs, RAG pipelines, agentic workflows and multi-agent systems to automate complex tasks and turn data into actionable insights.",
   },
 ] as const;
 
