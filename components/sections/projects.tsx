@@ -2,7 +2,12 @@
 
 import { ArrowUpRight, ChevronsUpDown, Link2 } from "lucide-react";
 import { PROJECTS, type Project } from "@/Data/portfolio";
-import { Panel, PanelHeader, PanelTitle, PanelTitleSup } from "@/components/ui/panel";
+import {
+  Panel,
+  PanelHeader,
+  PanelTitle,
+  PanelTitleSup,
+} from "@/components/ui/panel";
 import { PanelTitleCopy } from "@/components/panel-title-copy";
 import { Tag } from "@/components/ui/tag";
 import { CollapsibleList } from "@/components/collapsible-list";
@@ -23,7 +28,9 @@ function ProjectItem({ project }: { project: Project }) {
               {project.title}
             </span>
             {project.date && (
-              <span className="block font-mono text-xs text-muted-foreground">{project.date}</span>
+              <span className="block font-mono text-xs text-muted-foreground">
+                {project.date}
+              </span>
             )}
           </span>
           <a
@@ -80,7 +87,7 @@ export function Projects() {
 
       <CollapsibleList
         items={PROJECTS}
-        max={4}
+        max={2}
         keyExtractor={(p) => p.id}
         renderItem={(p) => <ProjectItem project={p} />}
       />
